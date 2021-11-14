@@ -34,15 +34,14 @@ public class CreateTaskFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment);
         binding.appBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
+
+                @Override
             public void onClick(View view) {
-                userTask = binding.taskEd.getText().toString();
-                navController.navigate(R.id.createTaskFragment);
-                Bundle bundle = new Bundle();
-                bundle.putString(Constants.USER_TASK, userTask);
-                navController.navigate(R.id.homeFragment, bundle);
-                Log.e("ttt", "user");
-            }
+                    navController.navigate(R.id.homeFragment);
+                    Bundle bundle = new Bundle();
+                    bundle.putString(Constants.USER_TASK, null);
+                    Log.e("ttt", "user");
+                }
         });
     }
 }

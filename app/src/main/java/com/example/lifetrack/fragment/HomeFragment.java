@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
@@ -18,6 +19,8 @@ import com.example.lifetrack.databinding.FragmentHomeBinding;
 public class HomeFragment extends Fragment {
     FragmentHomeBinding binding;
 
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -29,13 +32,30 @@ public class HomeFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment);
         binding.addFab.setOnClickListener(new View.OnClickListener() {
+            Bundle bundle = new Bundle();
+
 
             @Override
             public void onClick(View view) {
-                Navigation.findNavController(requireView()).navigate(R.id.createTaskFragment);
+                navController.navigate(R.id.createTaskFragment);
+
+                Bundle bundle = this.getArguments();
+                if (bundle != null) {
+                    String key = new String();
+                    int defaultValue = 0;
+                    int myInt = bundle.getInt(key, defaultValue);
+                }
+
+            }
+
+            private Bundle getArguments() {
+
+                return null;
             }
         });
+
+        }
     }
-}
 
