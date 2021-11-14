@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="24dp"
+    tools:context=".fragment.CreateTaskFragment">
+
+  <EditText
+      android:id="@+id/task_ed"
+      android:background="@drawable/rectangle_backgraund"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="12dp"
+      android:hint="Task"
+      app:layout_constraintTop_toTopOf="parent"
+      android:textColor="@color/black"
+      />
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:text="19.18,2021"
+        android:drawableEnd="@drawable/ic_date"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rectangle_backgraund"
+        app:layout_constraintTop_toBottomOf="@id/task_ed"
+        app:layout_constraintStart_toStartOf="@id/task_ed"
+        tools:ignore="MissingConstraints" />
+
+  <TextView
+      android:id="@+id/repeat_tv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="18sp"
+      android:padding="10dp"
+      android:text="Never"
+      android:drawableEnd="@drawable/ic_arrow_down"
+      android:drawablePadding="8dp"
+      android:background="@drawable/rectangle_backgraund"
+      app:layout_constraintTop_toBottomOf="@id/task_ed"
+      android:layout_marginTop="12dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      tools:ignore="MissingConstraints" />
+
+  <Button
+      android:id="@+id/app_btn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Add new task"
+      android:textColor="@color/white"
+      android:background="@drawable/rectangle_backgraund_button"
+      android:layout_marginTop="18dp"
+      app:layout_constraintTop_toBottomOf="@id/date_tv"
+      />
+
+  <TextView
+      android:layout_width="wrap_content"
+      app:layout_constraintTop_toBottomOf="@id/app_btn"
+      android:text="Back to task list "
+      android:layout_marginTop="12dp"
+      android:textSize="16sp"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
