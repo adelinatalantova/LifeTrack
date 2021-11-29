@@ -3,14 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LifeTrack/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2064814814814815" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LifeTrack/app/src/main/res/drawable/bacground_board.xml" value="0.215625" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/LifeTrack/app/src/main/res/drawable/ic_add.xml" value="0.2101851851851852" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/LifeTrack/app/src/main/res/drawable/ic_arrow_down.xml" value="0.2" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/LifeTrack/app/src/main/res/drawable/ic_date.xml" value="0.2101851851851852" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LifeTrack/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2064814814814815" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LifeTrack/app/src/main/res/drawable/my_button.xml" value="0.2203125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LifeTrack/app/src/main/res/drawable/mybutton.xml" value="0.2064814814814815" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/LifeTrack/app/src/main/res/drawable/rectangle_backgraund.xml" value="0.2101851851851852" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/LifeTrack/app/src/main/res/drawable/rectangle_backgraund_button.xml" value="0.2101851851851852" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/LifeTrack/app/src/main/res/layout/activity_main.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LifeTrack/app/src/main/res/layout/dots_cont.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LifeTrack/app/src/main/res/layout/fragment_board.xml" value="0.19947916666666668" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/LifeTrack/app/src/main/res/layout/fragment_create_task.xml" value="0.2" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/LifeTrack/app/src/main/res/layout/fragment_home.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LifeTrack/app/src/main/res/layout/fragment_on_board.xml" value="0.22" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LifeTrack/app/src/main/res/layout/fragment_on_board2.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LifeTrack/app/src/main/res/layout/selected_dot.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LifeTrack/app/src/main/res/layout/slider_item.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LifeTrack/app/src/main/res/layout/tab_layout.xml" value="0.19947916666666668" />
       </map>
     </option>
   </component>

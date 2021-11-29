@@ -17,8 +17,9 @@ import android.view.ViewGroup;
 import com.example.lifetrack.R;
 import com.example.lifetrack.databinding.FragmentCreateTaskBinding;
 import com.example.lifetrack.utils.Constants;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
-public class CreateTaskFragment extends Fragment {
+public class CreateTaskFragment extends BottomSheetDialogFragment {
     FragmentCreateTaskBinding binding;
     String userTask;
 
