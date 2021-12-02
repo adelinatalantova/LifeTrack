@@ -19,8 +19,6 @@ import com.example.lifetrack.databinding.FragmentHomeBinding;
 public class HomeFragment extends Fragment {
     FragmentHomeBinding binding;
 
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -39,21 +37,23 @@ public class HomeFragment extends Fragment {
 
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.createTaskFragment);
+                CreateTaskFragment createTaskFragment = new CreateTaskFragment();
+                createTaskFragment.show(requireActivity().getSupportFragmentManager(),"ololo");
+                navController.navigate(R.id.homeFragment);
 
-                Bundle bundle = this.getArguments();
-                if (bundle != null) {
-                    String key = new String();
-                    int defaultValue = 0;
-                    int myInt = bundle.getInt(key, defaultValue);
-                }
+//                Bundle bundle = this.getArguments ();
+//                if (bundle != null) {
+//                    String key = new String();
+//                    int defaultValue = 0;
+//                    int myInt = bundle.getInt(key, defaultValue);
+//                }
 
             }
 
-            private Bundle getArguments() {
-
-                return null;
-            }
+//            private Bundle getArguments() {
+//
+//                return null;
+//            }
         });
 
         }
